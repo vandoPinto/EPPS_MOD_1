@@ -1,83 +1,26 @@
-<!-- GOOGLE ANALYTICS -->
-
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-68KPG6JX25"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-68KPG6JX25');
-</script>
-<!--/ FIM GOOGLE ANALYTICS -->
-<!-- Code injected by live-server -->
-<script>
-    // <![CDATA[  <-- For SVG support
-    if ('WebSocket' in window) {
-        (function () {
-            function refreshCSS() {
-                var sheets = [].slice.call(document.getElementsByTagName("link"));
-                var head = document.getElementsByTagName("head")[0];
-                for (var i = 0; i < sheets.length; ++i) {
-                    var elem = sheets[i];
-                    var parent = elem.parentElement || head;
-                    parent.removeChild(elem);
-                    var rel = elem.rel;
-                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                    }
-                    parent.appendChild(elem);
-                }
-            }
-            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-            var address = protocol + window.location.host + window.location.pathname + '/ws';
-            var socket = new WebSocket(address);
-            socket.onmessage = function (msg) {
-                if (msg.data == 'reload') window.location.reload();
-                else if (msg.data == 'refreshcss') refreshCSS();
-            };
-            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                console.log('Live reload enabled.');
-                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-            }
-        })();
-    }
-    else {
-        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-    }
-	// ]]>
-</script>
-
-
-
 <div class="largura-1_1">
-    <img style="width:100%; right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
+    <img style="width:100%;  right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
 </div>
-
 <div class="coluna-esquerda largura-1_1">
-    <div style="width: 60%; margin:82px auto;">
-        <div class="objetivo animate__animated animate__pulse">
-            <div>
-                <img class="icone-image" style="width: 12%; margin-right: -6%; margin-top: -30px;"
-                    src="recursos/icones/RM_M1A1_Icones06.svg">
-                <div class="box-click" style="width: auto;">
-                    <div class="line-box">
-                        <div style="margin-left: 20px;">
-                            <h1>ATENÇÃO</h1>
-                            <p style="margin-top: 15px;">
-                                Para promover a equidade, portanto, seria relevante atentar para que diferenças entre
-                                grupos não se tornem iniquidades, atuando para que grupos historicamente
-                                vulnerabilizados possam receber medidas afirmativas para acessar com mais facilidade
-                                seus direitos.</p>
-                        </div>
+    <div class="objetivo animate__animated animate__pulse">
+        <div style="margin-top: 117px;">
+            <img class="icone-image" style="width: 7%;margin-right: 12%;margin-top: -30px;"
+                src="recursos/icones/RM_M1A1_Icones05.svg">
+            <div class="box-click" style="width: 63%;">
+                <div class="line-box">
+                    <div style="margin-left: 20px;">
+                        <h1>ATENÇÃO</h1>
+                        <p style="margin-top: 15px;">
+                            Para promover a equidade, portanto, seria relevante atentar para que diferenças entre
+                            grupos não se tornem iniquidades, atuando para que grupos historicamente
+                            vulnerabilizados possam receber medidas afirmativas para acessar com mais facilidade
+                            seus direitos.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 <footer class="bg-footer" style="padding: 0; height: 40px;">
     <div class="rodape border-right">
         <p style="font-weight: 900;">Aula 01</p>

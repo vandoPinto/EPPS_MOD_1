@@ -1,84 +1,59 @@
-<!-- GOOGLE ANALYTICS -->
-
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-68KPG6JX25"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-68KPG6JX25');
-</script>
-<!--/ FIM GOOGLE ANALYTICS -->
-
-<style>
-    .two-boxes {
-        display: flex;
-        width: 100%;
-        gap: 10px;
-    }
-
-    .box-click {
-        padding: 10px 20px;
-    }
-</style>
-
-<!-- Code injected by live-server -->
-<script>
-    // <![CDATA[  <-- For SVG support
-    if ('WebSocket' in window) {
-        (function () {
-            function refreshCSS() {
-                var sheets = [].slice.call(document.getElementsByTagName("link"));
-                var head = document.getElementsByTagName("head")[0];
-                for (var i = 0; i < sheets.length; ++i) {
-                    var elem = sheets[i];
-                    var parent = elem.parentElement || head;
-                    parent.removeChild(elem);
-                    var rel = elem.rel;
-                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                    }
-                    parent.appendChild(elem);
-                }
-            }
-            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-            var address = protocol + window.location.host + window.location.pathname + '/ws';
-            var socket = new WebSocket(address);
-            socket.onmessage = function (msg) {
-                if (msg.data == 'reload') window.location.reload();
-                else if (msg.data == 'refreshcss') refreshCSS();
-            };
-            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                console.log('Live reload enabled.');
-                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-            }
-        })();
-    }
-    else {
-        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-    }
-	// ]]>
-</script>
-
-
-
-
 <div class="largura-1_1">
     <img style="width:100%; right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
 </div>
-
 <div class="coluna-esquerda largura-1_1 ">
-    <div style="margin: 30px auto; width: 85%; ">
-        <p>Um dos principais desafios é tornar nítido para todos os atores-chave envolvidos no SUS quais são as principais barreiras de equidade enfrentadas no território. Para dar visibilidade a essas barreiras, é recomendável (BRASIL, 2020):</p>
-       
+    <div style="margin: 35px auto;width: 83%;">
+        <p>Um dos principais desafios é tornar nítido para todos os atores-chave envolvidos no SUS quais são as
+            principais barreiras de equidade enfrentadas no território. Para dar visibilidade a essas barreiras, é
+            recomendável (BRASIL, 2020):</p>
+        <div>
+            <div style="display: flex;align-items: center;">
+                <div>
+                    <img src="recursos/imgs/CODEP_EPPS_M1U1_RIM_01a.svg" style="width: 67px;">
+                </div>
+                <div
+                    style="width: 750px;height: 41px;background: #FAC496 0% 0% no-repeat padding-box;margin-left: -20px;z-index: -1;display: flex;align-items: center;">
+                    <p style="font: normal normal normal 14px/18px Open Sans;margin-left: 30px;width: 430px;">
+                        descrever os potenciais grupos e cenários desfavorecidos;</p>
+                </div>
+            </div>
+            <div style="display: flex;align-items: center;">
+                <div>
+                    <img src="recursos/imgs/CODEP_EPPS_M1U1_RIM_01a.svg" style="width: 67px;">
+                </div>
+                <div
+                    style="width: 750px;height: 41px;background: #FAC496 0% 0% no-repeat padding-box;margin-left: -20px;z-index: -1;display: flex;align-items: center;">
+                    <p style="font: normal normal normal 14px/18px Open Sans;margin-left: 30px;width: 430px;">
+                        explicitar estratégias que reduzam as possíveis iniquidades;</p>
+                </div>
+            </div>
+            <div style="display: flex;align-items: center;">
+                <div>
+                    <img src="recursos/imgs/CODEP_EPPS_M1U1_RIM_01a.svg" style="width: 67px;">
+                </div>
+                <div
+                    style="width: 750px;height: 41px;background: #FAC496 0% 0% no-repeat padding-box;margin-left: -20px;z-index: -1;display: flex;align-items: center;">
+                    <p style="font: normal normal normal 14px/18px Open Sans;margin-left: 30px;width: 640px;">
+                        pesquisar sobre programas já existentes para melhorar o acesso e a qualidade dos cuidados
+                        por
+                        diferentes grupos;</p>
+                </div>
+            </div>
+            <div style="display: flex;align-items: center;">
+                <div>
+                    <img src="recursos/imgs/CODEP_EPPS_M1U1_RIM_01a.svg" style="width: 67px;">
+                </div>
+                <div
+                    style="width: 750px;height: 52px;background: #FAC496 0% 0% no-repeat padding-box;margin-left: -20px;z-index: -1;display: flex;align-items: center;">
+                    <p style="font: normal normal normal 14px/18px Open Sans;margin-left: -10px;width: 691px;">
+                        adotar diferentes estratégias de gestão, financiamento, provisão de serviços, apoio técnico
+                        complementar nos diferentes contextos ou investimento de recursos adicionais para mitigar
+                        iniquidades.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
 <footer class="bg-footer" style="padding: 0; height: 40px;">
     <div class="rodape border-right">
         <p style="font-weight: 900;">Aula 01</p>

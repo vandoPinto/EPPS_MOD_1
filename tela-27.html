@@ -1,98 +1,47 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen"> -->
+<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
+<!-- <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen"> -->
+<!-- <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen"> -->
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<style>
+    .objetivo-box {
+        width: 65%;
+        background-color: transparent;
+        border-top: var(--color-blue) solid 30px;
+        margin: 100px auto;
+    }
 
-    <!-- GOOGLE ANALYTICS -->
-
-    <!-- Google tag (gtag.js) -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-68KPG6JX25"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-68KPG6JX25');
-    </script>
-    <!--/ FIM GOOGLE ANALYTICS -->
-
-    <meta charset="UTF-8">
-    <title>Caça Palavras</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen"> -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
-    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen"> -->
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
-    <style>
-        .objetivo-box {
-            width: 65%;
-            background-color: transparent;
-            border-top: var(--color-blue) solid 30px;
-            margin: 100px auto;
-        }
-        
-        .objetivo-inside {
-            margin: 33px 0 0 7px;
-            padding-right: 8px;
-            width: 385px;
-            background-color: white;
-        }
-    </style>
-
-
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-
-
-
+    .objetivo-inside {
+        margin: 33px 0 0 7px;
+        padding-right: 8px;
+        width: 385px;
+        background-color: white;
+    }
+</style>
 <div class="largura-1_1">
     <img style="width:100%; right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
 </div>
 <div class="coluna-esquerda largura-1_1 ">
     <div style="margin: 30px auto; width: 85%; ">
         <p>
-            Vamos verificar se você recorda os princípios e as diretrizes que são costumeiramente mais ressaltados como pilares do SUS? No caça-palavras, procure seis palavras-chave que o(a) ajudarão na recapitulação do estudo.</p>
+            Vamos verificar se você recorda os princípios e as diretrizes que são costumeiramente mais ressaltados como
+            pilares do SUS? No caça-palavras, procure seis palavras-chave que o(a) ajudarão na recapitulação do estudo.
+        </p>
     </div>
     <section class="main-content" style="margin-top: -40px; margin-left: 30px;">
-        <div id="puzzle"><div><button class="puzzleSquare" x="0" y="0">k</button><button class="puzzleSquare" x="1" y="0">T</button><button class="puzzleSquare" x="2" y="0">I</button><button class="puzzleSquare" x="3" y="0">T</button><button class="puzzleSquare" x="4" y="0">U</button><button class="puzzleSquare" x="5" y="0">L</button><button class="puzzleSquare" x="6" y="0">O</button><button class="puzzleSquare" x="7" y="0">d</button><button class="puzzleSquare" x="8" y="0">M</button><button class="puzzleSquare" x="9" y="0">R</button><button class="puzzleSquare" x="10" y="0">y</button></div><div><button class="puzzleSquare" x="0" y="1">h</button><button class="puzzleSquare" x="1" y="1">e</button><button class="puzzleSquare" x="2" y="1">s</button><button class="puzzleSquare" x="3" y="1">s</button><button class="puzzleSquare" x="4" y="1">s</button><button class="puzzleSquare" x="5" y="1">d</button><button class="puzzleSquare" x="6" y="1">u</button><button class="puzzleSquare" x="7" y="1">b</button><button class="puzzleSquare" x="8" y="1">E</button><button class="puzzleSquare" x="9" y="1">E</button><button class="puzzleSquare" x="10" y="1">h</button></div><div><button class="puzzleSquare" x="0" y="2">g</button><button class="puzzleSquare" x="1" y="2">o</button><button class="puzzleSquare" x="2" y="2">h</button><button class="puzzleSquare" x="3" y="2">p</button><button class="puzzleSquare" x="4" y="2">n</button><button class="puzzleSquare" x="5" y="2">y</button><button class="puzzleSquare" x="6" y="2">d</button><button class="puzzleSquare" x="7" y="2">f</button><button class="puzzleSquare" x="8" y="2">T</button><button class="puzzleSquare" x="9" y="2">S</button><button class="puzzleSquare" x="10" y="2">o</button></div><div><button class="puzzleSquare" x="0" y="3">c</button><button class="puzzleSquare" x="1" y="3">w</button><button class="puzzleSquare" x="2" y="3">o</button><button class="puzzleSquare" x="3" y="3">o</button><button class="puzzleSquare" x="4" y="3">R</button><button class="puzzleSquare" x="5" y="3">j</button><button class="puzzleSquare" x="6" y="3">r</button><button class="puzzleSquare" x="7" y="3">o</button><button class="puzzleSquare" x="8" y="3">O</button><button class="puzzleSquare" x="9" y="3">U</button><button class="puzzleSquare" x="10" y="3">y</button></div><div><button class="puzzleSquare" x="0" y="4">g</button><button class="puzzleSquare" x="1" y="4">r</button><button class="puzzleSquare" x="2" y="4">e</button><button class="puzzleSquare" x="3" y="4">u</button><button class="puzzleSquare" x="4" y="4">f</button><button class="puzzleSquare" x="5" y="4">E</button><button class="puzzleSquare" x="6" y="4">y</button><button class="puzzleSquare" x="7" y="4">i</button><button class="puzzleSquare" x="8" y="4">D</button><button class="puzzleSquare" x="9" y="4">L</button><button class="puzzleSquare" x="10" y="4">k</button></div><div><button class="puzzleSquare" x="0" y="5">D</button><button class="puzzleSquare" x="1" y="5">I</button><button class="puzzleSquare" x="2" y="5">S</button><button class="puzzleSquare" x="3" y="5">C</button><button class="puzzleSquare" x="4" y="5">U</button><button class="puzzleSquare" x="5" y="5">S</button><button class="puzzleSquare" x="6" y="5">S</button><button class="puzzleSquare" x="7" y="5">A</button><button class="puzzleSquare" x="8" y="5">O</button><button class="puzzleSquare" x="9" y="5">T</button><button class="puzzleSquare" x="10" y="5">l</button></div><div><button class="puzzleSquare" x="0" y="6">b</button><button class="puzzleSquare" x="1" y="6">u</button><button class="puzzleSquare" x="2" y="6">C</button><button class="puzzleSquare" x="3" y="6">O</button><button class="puzzleSquare" x="4" y="6">N</button><button class="puzzleSquare" x="5" y="6">C</button><button class="puzzleSquare" x="6" y="6">L</button><button class="puzzleSquare" x="7" y="6">U</button><button class="puzzleSquare" x="8" y="6">S</button><button class="puzzleSquare" x="9" y="6">A</button><button class="puzzleSquare" x="10" y="6">O</button></div><div><button class="puzzleSquare" x="0" y="7">n</button><button class="puzzleSquare" x="1" y="7">h</button><button class="puzzleSquare" x="2" y="7">r</button><button class="puzzleSquare" x="3" y="7">a</button><button class="puzzleSquare" x="4" y="7">p</button><button class="puzzleSquare" x="5" y="7">b</button><button class="puzzleSquare" x="6" y="7">l</button><button class="puzzleSquare" x="7" y="7">c</button><button class="puzzleSquare" x="8" y="7">M</button><button class="puzzleSquare" x="9" y="7">D</button><button class="puzzleSquare" x="10" y="7">j</button></div><div><button class="puzzleSquare" x="0" y="8">I</button><button class="puzzleSquare" x="1" y="8">N</button><button class="puzzleSquare" x="2" y="8">T</button><button class="puzzleSquare" x="3" y="8">R</button><button class="puzzleSquare" x="4" y="8">O</button><button class="puzzleSquare" x="5" y="8">D</button><button class="puzzleSquare" x="6" y="8">U</button><button class="puzzleSquare" x="7" y="8">C</button><button class="puzzleSquare" x="8" y="8">A</button><button class="puzzleSquare" x="9" y="8">O</button><button class="puzzleSquare" x="10" y="8">r</button></div><div><button class="puzzleSquare" x="0" y="9">v</button><button class="puzzleSquare" x="1" y="9">k</button><button class="puzzleSquare" x="2" y="9">d</button><button class="puzzleSquare" x="3" y="9">w</button><button class="puzzleSquare" x="4" y="9">b</button><button class="puzzleSquare" x="5" y="9">m</button><button class="puzzleSquare" x="6" y="9">k</button><button class="puzzleSquare" x="7" y="9">k</button><button class="puzzleSquare" x="8" y="9">s</button><button class="puzzleSquare" x="9" y="9">S</button><button class="puzzleSquare" x="10" y="9">c</button></div><div><button class="puzzleSquare" x="0" y="10">R</button><button class="puzzleSquare" x="1" y="10">E</button><button class="puzzleSquare" x="2" y="10">F</button><button class="puzzleSquare" x="3" y="10">E</button><button class="puzzleSquare" x="4" y="10">R</button><button class="puzzleSquare" x="5" y="10">E</button><button class="puzzleSquare" x="6" y="10">N</button><button class="puzzleSquare" x="7" y="10">C</button><button class="puzzleSquare" x="8" y="10">I</button><button class="puzzleSquare" x="9" y="10">A</button><button class="puzzleSquare" x="10" y="10">S</button></div></div>
+        <div id='puzzle'></div>
         <div style="position:relative;float: left;">
-            <div id="words"><ul><li class="word CONCLUSAO">CONCLUSAO</li><li class="word DISCUSSAO">DISCUSSAO</li><li class="word INTRODUCAO">INTRODUCAO</li><li class="word METODOS">METODOS</li><li class="word REFERENCIAS">REFERENCIAS</li><li class="word RESULTADOS">RESULTADOS</li><li class="word RESUMO">RESUMO</li><li class="word TITULO">TITULO</li></ul></div>
+            <div id="words">
+                <ul>
+                    <li class="word REGIONALIZAÇÃO">REGIONALIZAÇÃO</li>
+                    <li class="word HIERARQUIZAÇÃO">HIERARQUIZAÇÃO</li>
+                    <li class="word CONSELHOS">CONSELHOS</li>
+                    <li class="word CONTROLES">CONTROLES</li>
+                    <li class="word DESCENTRALIZAÇÃO">DESCENTRALIZAÇÃO</li>
+                </ul>
+            </div>
             <div class="words-header">
                 <p>Encontre as seguintes palavras:</p>
             </div>
@@ -100,14 +49,15 @@
         </div>
 
         <footer class="site-footer">
-            <script language="javascript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+            <script language="javascript" type="text/javascript"
+                src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
             <script src="js/wordfind.js"></script>
             <script type="text/javascript" src="js/wordfindgame.js"></script>
             <script>
-                var words = ['TITULO', 'RESULTADOS', 'CONCLUSAO', 'RESUMO', 'DISCUSSAO', 'INTRODUCAO'];
+                var words = ['CONTROLES', 'RESULTADOS', 'REGIONALIZAÇÃO', 'RESUMO', 'HIERARQUIZAÇÃO', 'CONSELHOS','DESCENTRALIZAÇÃO'];
                 // start a word find game
                 var gamePuzzle = wordfindgame.create(words, '#puzzle', '#words');
-                $('#solve').click(function() {
+                $('#solve').click(function () {
                     wordfindgame.solve(gamePuzzle, words);
                 });
                 // create just a puzzle, without filling in the blanks and print to console
@@ -128,7 +78,8 @@
                     <button class="btn-fechar">×</button>
                 </div>
                 <div>
-                    <p>O <b>título</b> deve ser conciso, informativo e capaz de descrever o conteúdo do artigo com palavras-chave. Ou seja, deve tornar evidente o ponto central do artigo científico.</p>
+                    <p>O <b>título</b> deve ser conciso, informativo e capaz de descrever o conteúdo do artigo com
+                        palavras-chave. Ou seja, deve tornar evidente o ponto central do artigo científico.</p>
                 </div>
             </div>
         </div>
@@ -141,7 +92,8 @@
                     <button class="btn-fechar">×</button>
                 </div>
                 <div>
-                    <p>Os <b>resultados</b> demonstram o que foi encontrado na pesquisa. Em artigos originais, geralmente, inicia-se apresentando descritivamente a amostra investigada.</p>
+                    <p>Os <b>resultados</b> demonstram o que foi encontrado na pesquisa. Em artigos originais,
+                        geralmente, inicia-se apresentando descritivamente a amostra investigada.</p>
                 </div>
             </div>
         </div>
@@ -155,7 +107,8 @@
                 </div>
                 <div>
                     <p>
-                        A <b>conclusão</b> é o posicionamento do autor do estudo, deve responder aos objetivos deste. Ela pode conter as direções futuras e recomendações para a necessidade de novas pesquisas.
+                        A <b>conclusão</b> é o posicionamento do autor do estudo, deve responder aos objetivos deste.
+                        Ela pode conter as direções futuras e recomendações para a necessidade de novas pesquisas.
                     </p>
                 </div>
             </div>
@@ -170,7 +123,8 @@
                 </div>
                 <div>
                     <p>
-                        O <b>resumo</b> deve atrair o leitor para o artigo completo. Pode ser estruturado contendo seções separadas de introdução, objetivo, método, principais resultados e conclusão.
+                        O <b>resumo</b> deve atrair o leitor para o artigo completo. Pode ser estruturado contendo
+                        seções separadas de introdução, objetivo, método, principais resultados e conclusão.
                     </p>
                 </div>
             </div>
@@ -186,8 +140,11 @@
                 </div>
                 <div>
                     <p>
-                        Na <b>discussão</b> o autor interpreta o significado dos resultados e se posiciona em relação a eles. Além disso, compara os seus resultados com outros achados de pesquisas, contextualiza e analisa o significado, mostrando suas
-                        contribuições para o campo estudado. Também aponta as limitações da pesquisa, como os aspectos negativos encontrados, e os pontos positivos.
+                        Na <b>discussão</b> o autor interpreta o significado dos resultados e se posiciona em relação a
+                        eles. Além disso, compara os seus resultados com outros achados de pesquisas, contextualiza e
+                        analisa o significado, mostrando suas
+                        contribuições para o campo estudado. Também aponta as limitações da pesquisa, como os aspectos
+                        negativos encontrados, e os pontos positivos.
                     </p>
                 </div>
             </div>
@@ -203,7 +160,9 @@
                 </div>
                 <div>
                     <p>
-                        A <b>introdução</b> contém informações que justificam a pesquisa e mostram o objetivo que orientou a elaboração do texto. Ela deve ser iniciada com uma contextualização breve na qual o autor informa o que foi pesquisado e o porquê
+                        A <b>introdução</b> contém informações que justificam a pesquisa e mostram o objetivo que
+                        orientou a elaboração do texto. Ela deve ser iniciada com uma contextualização breve na qual o
+                        autor informa o que foi pesquisado e o porquê
                         da investigação.
                     </p>
                 </div>
@@ -218,7 +177,8 @@
 
                 <div>
                     <p>
-                        Para as <b>referências</b>, a regra de ouro é seguir as recomendações da revista que você escolheu!
+                        Para as <b>referências</b>, a regra de ouro é seguir as recomendações da revista que você
+                        escolheu!
                     </p>
                 </div>
                 <div class="modal-fechar" style="margin-top: -12px">
@@ -293,49 +253,31 @@
         })
     })
 
-    $('.TITULO').on('click', function() {
-        if ($(this).hasClass('wordFound')) {
-            $(document).find('#janela_1').addClass('shown').on('click', fecharTodasAsJanelas);
-        }
-    });
-
-    $('.RESULTADOS').on('click', function() {
-        if ($(this).hasClass('wordFound')) {
-            $(document).find('#janela_2').addClass('shown').on('click', fecharTodasAsJanelas);
-        }
-    });
-
-    $('.CONCLUSAO').on('click', function() {
+    $('.REGIONALIZAÇÃO').on('click', function () {
         if ($(this).hasClass('wordFound')) {
             $(document).find('#janela_3').addClass('shown').on('click', fecharTodasAsJanelas);
         }
     });
 
-    $('.RESUMO').on('click', function() {
-        if ($(this).hasClass('wordFound')) {
-            $(document).find('#janela_4').addClass('shown').on('click', fecharTodasAsJanelas);
-        }
-    });
-
-    $('.DISCUSSAO').on('click', function() {
+    $('.HIERARQUIZAÇÃO').on('click', function () {
         if ($(this).hasClass('wordFound')) {
             $(document).find('#janela_5').addClass('shown').on('click', fecharTodasAsJanelas);
         }
     });
 
-    $('.INTRODUCAO').on('click', function() {
+    $('.CONSELHOS').on('click', function () {
         if ($(this).hasClass('wordFound')) {
             $(document).find('#janela_6').addClass('shown').on('click', fecharTodasAsJanelas);
         }
     });
 
-    $('.REFERENCIAS').on('click', function() {
+    $('.DESCENTRALIZAÇÃO').on('click', function () {
         if ($(this).hasClass('wordFound')) {
             $(document).find('#janela_7').addClass('shown').on('click', fecharTodasAsJanelas);
         }
     });
 
-    $('.METODOS').on('click', function() {
+    $('.CONTROLES').on('click', function () {
         if ($(this).hasClass('wordFound')) {
             $(document).find('#janela_8').addClass('shown').on('click', fecharTodasAsJanelas);
         }

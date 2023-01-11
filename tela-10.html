@@ -1,81 +1,66 @@
-<!-- GOOGLE ANALYTICS -->
-
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-68KPG6JX25"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-68KPG6JX25');
-</script>
-<!--/ FIM GOOGLE ANALYTICS -->
-
-<style>
-    .list-flex {
-        display: flex;
-        gap: 20px;
-    }
-
-    p {
-        margin: 6px 0;
-    }
-</style>
-
-<!-- Code injected by live-server -->
-<script>
-    // <![CDATA[  <-- For SVG support
-    if ('WebSocket' in window) {
-        (function () {
-            function refreshCSS() {
-                var sheets = [].slice.call(document.getElementsByTagName("link"));
-                var head = document.getElementsByTagName("head")[0];
-                for (var i = 0; i < sheets.length; ++i) {
-                    var elem = sheets[i];
-                    var parent = elem.parentElement || head;
-                    parent.removeChild(elem);
-                    var rel = elem.rel;
-                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                    }
-                    parent.appendChild(elem);
-                }
-            }
-            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-            var address = protocol + window.location.host + window.location.pathname + '/ws';
-            var socket = new WebSocket(address);
-            socket.onmessage = function (msg) {
-                if (msg.data == 'reload') window.location.reload();
-                else if (msg.data == 'refreshcss') refreshCSS();
-            };
-            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                console.log('Live reload enabled.');
-                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-            }
-        })();
-    }
-    else {
-        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-    }
-	// ]]>
-</script>
-
-
-
 <div class="largura-1_1">
     <img style="width:100%;  right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
 </div>
-
 <div class=" coluna-esquerda largura-1_1">
-    <div style="margin: 20px auto; width: 80%;">
+    <div style="margin: 25px auto;width: 82%;">
         <h1>Introdução</h1>
         <p>Nesta unidade, abordaremos fatos históricos que constituíram a saúde pública do Brasil que repercutem até
             hoje nos processos de tomada de decisão do SUS.</p>
-
+        <div
+            style="display: flex;flex-direction: column;height: 240px;justify-content: space-between;margin-top: 26px;align-items: center;">
+            <div style="display: flex;">
+                <div
+                    style="width: 41px;height: 41px;background: #46B3C1 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;border-radius: 50%;display: flex;align-items: center;justify-content: center;box-shadow: 0px 3px 6px #00000029;">
+                    <p style="font: normal normal bold 20px/18px Open Sans;color: #FFFFFF;">1</p>
+                </div>
+                <div
+                    style="width: 599px;height: 36px;background: #46B3C1 0% 0% no-repeat padding-box;display: flex;align-items: center;justify-content: flex-start;margin-left: -10px;margin-top: 3px;z-index: -1;">
+                    <p style="font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;margin-left: 20px;">
+                        Vamos
+                        passar
+                        pelos principais marcos históricos do SUS.</p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div
+                    style="width: 41px;height: 41px;background: #C55A1A 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;border-radius: 50%;display: flex;align-items: center;justify-content: center;box-shadow: 0px 3px 6px #00000029;">
+                    <p style="font: normal normal bold 20px/18px Open Sans;color: #FFFFFF;">2</p>
+                </div>
+                <div
+                    style="width: 612px;height: 50px;background: #C55A1A 0% 0% no-repeat padding-box;display: flex;align-items: center;justify-content: flex-start;margin-left: -22px;margin-top: -5px;z-index: -1;">
+                    <p style="font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;margin-left: 32px;">
+                        Aprofundaremos nos eventos mais importantes da construção e evolução desse sistema.</p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div
+                    style="width: 41px;height: 41px;background: #7CB7AE 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;border-radius: 50%;display: flex;align-items: center;justify-content: center;box-shadow: 0px 3px 6px #00000029;">
+                    <p style="font: normal normal bold 20px/18px Open Sans;color: #FFFFFF;">3</p>
+                </div>
+                <div
+                    style="width: 599px;height: 48px;background: #7CB7AE 0% 0% no-repeat padding-box;display: flex;align-items: center;justify-content: flex-start;margin-left: -10px;margin-top: -4px;z-index: -1;">
+                    <p style="font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;margin-left: 20px;">
+                        Veremos
+                        seus princípios, suas diretrizes e a incorporação do conceito de equidade em todas as
+                        políticas
+                        e os programas do SUS.</p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div
+                    style="width: 41px;height: 41px;background: #EF6828 0% 0% no-repeat padding-box;box-shadow: 0px 3px 6px #00000029;border-radius: 50%;display: flex;align-items: center;justify-content: center;box-shadow: 0px 3px 6px #00000029;">
+                    <p style="font: normal normal bold 20px/18px Open Sans;color: #FFFFFF;">4</p>
+                </div>
+                <div
+                    style="width: 599px;height: 36px;background: #EF6828 0% 0% no-repeat padding-box;display: flex;align-items: center;justify-content: flex-start;margin-left: -10px;margin-top: 3px;z-index: -1;">
+                    <p style="font: normal normal normal 14px/18px Open Sans;color: #FFFFFF;margin-left: 20px;">
+                        Agora,
+                        vamos iniciar a nossa jornada de aprendizado?!</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
 <footer class="bg-footer" style="padding: 0; height: 40px;">
     <div class="rodape border-right">
         <p style="font-weight: 900;">Aula 01</p>

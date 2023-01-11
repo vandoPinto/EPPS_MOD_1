@@ -1,77 +1,53 @@
-
-    <!-- GOOGLE ANALYTICS -->
-
-    <!-- Google tag (gtag.js) -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-68KPG6JX25"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-68KPG6JX25');
-    </script>
-    <!--/ FIM GOOGLE ANALYTICS -->
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
-
-
-
 <div class="largura-1_1">
-    <img style="width:100%; right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
+	<img style="width:100%; right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
 </div>
-
 <div class="coluna-esquerda largura-1_1 ">
-    <div style="margin: 64px auto; width: 90%;">
-        <h1>Referências Bibliográficas</h1>
+	<div style="margin: 64px auto; width: 90%;">
 
-        MATTA, G. C. Princípios e diretrizes do Sistema Único de Saúde. In: MATTA, G. C.; PONTES, A. L. M. (orgs.). Políticas de saúde: organização e operacionalização do Sistema Único de Saúde. Rio de Janeiro: EPSJV/FIOCRUZ, 2007, p. 61-80. O’NEILL, J. et al. Applying an equity lens to interventions: using PROGRESS ensures consideration of socially stratifying factors to illuminate inequities in health. Journal of Clinical Epidemiology, [S.l.], v. 67, n. 1, p. 56-64, 2014. Disponível em: https://pubmed.ncbi.nlm.nih.gov/24189091/. Acesso em: 28 set. 2022. UKFIET. Towards building back equitably. UKFIET, 2019. Disponível em: https://www.ukfiet.org/conference/towards-building-back-equitably/. Acesso em: 28 set. 2022.
+		<p>
+			MATTA, G. C. Princípios e diretrizes do Sistema Único de Saúde. <i>In</i>: MATTA, G. C.; PONTES, A. L. M.
+			(orgs.).
+			Políticas de saúde: organização e operacionalização do Sistema Único de Saúde. Rio de Janeiro:
+			EPSJV/FIOCRUZ,
+			2007, p. 61-80.
+		</p>
 
-        WHITEHEAD, M. The Concepts and Principles of Equity and Health. International Journal of Health Services, [S.l.], v. 22, n. 3, pp. 429-445, 1992. Disponível em: https://pubmed.ncbi.nlm.nih.gov/1644507/. Acesso em: 28 set. 2022. WORLD HEALTH ORGANIZATION (WHO). A conceptual framework for action on the social determinants of health. Geneva: World Health Organization, 2010. Disponível em: https://apps.who.int/iris/handle/10665/44489. Acesso em: 28 set. 2022.
-    </div>
+		<p>
+			O’NEILL, J. <i>et al</i>. Applying an equity lens to interventions: using PROGRESS ensures
+			consideration of socially stratifying factors to illuminate inequities in health. Journal of Clinical
+			Epidemiology, [<i>S.l.</i>], v. 67, n. 1, p. 56-64, 2014. Disponível em: <a
+				href="https://pubmed.ncbi.nlm.nih.gov/24189091/" target="_blank"
+				style="color: #0E73F2;">https://pubmed.ncbi.nlm.nih.gov/24189091/</a>.
+			Acesso em: 28 set. 2022.
+		</p>
+
+		<p>
+			UKFIET. Towards building back equitably. UKFIET, 2019. Disponível em:
+			<a href="https://www.ukfiet.org/conference/towards-building-back-equitably/" target="_blank"
+				style="color: #0E73F2;">https://www.ukfiet.org/conference/towards-building-back-equitably/</a>. Acesso
+			em: 28 set. 2022.
+		</p>
+
+		<p>
+			WHITEHEAD, M. The Concepts and Principles of Equity and Health. International Journal of Health Services,
+			[<i>S.l.</i>], v. 22, n. 3, pp. 429-445, 1992. Disponível em: <a
+				href="https://pubmed.ncbi.nlm.nih.gov/1644507/" target="_blank"
+				style="color: #0E73F2;">https://pubmed.ncbi.nlm.nih.gov/1644507/</a>. Acesso em: 28
+			set. 2022.
+		</p>
+
+		<p>
+			WORLD HEALTH ORGANIZATION (WHO). A conceptual framework for action on the social determinants of
+			health. Geneva: World Health Organization, 2010. Disponível em: <a
+				href="https://apps.who.int/iris/handle/10665/44489" target="_blank"
+				style="color: #0E73F2;">https://apps.who.int/iris/handle/10665/44489</a>.
+			Acesso em: 28 set. 2022.
+		</p>
+	</div>
 </div>
-
 <footer class="bg-footer" style="padding: 0; height: 40px;">
-    <div class="rodape border-right">
-        <p style="font-weight: 900;">Aula 01</p>
-        <p>Introdução à Escrita Científica</p>
-    </div>
+	<div class="rodape border-right">
+		<p style="font-weight: 900;">Aula 01</p>
+		<p>Introdução à Escrita Científica</p>
+	</div>
 </footer>
