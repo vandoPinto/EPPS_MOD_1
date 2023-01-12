@@ -19,6 +19,11 @@
         width: 385px;
         background-color: white;
     }
+
+    #puzzle .puzzleSquare {
+        height: 18px;
+        width: 37px;
+    }
 </style>
 <div class="largura-1_1">
     <img style="width:100%; right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
@@ -32,7 +37,7 @@
     </div>
     <section class="main-content" style="margin-top: -40px; margin-left: 30px;">
         <div id='puzzle'></div>
-        <div style="position:relative;float: left;">
+        <div style="position: absolute;right: 7px;">
             <div id="words">
                 <ul>
                     <li class="word REGIONALIZAÇÃO">REGIONALIZAÇÃO</li>
@@ -40,6 +45,7 @@
                     <li class="word CONSELHOS">CONSELHOS</li>
                     <li class="word CONTROLES">CONTROLES</li>
                     <li class="word DESCENTRALIZAÇÃO">DESCENTRALIZAÇÃO</li>
+                    <li class="word LAICOS">LAICOS</li>
                 </ul>
             </div>
             <div class="words-header">
@@ -54,7 +60,7 @@
             <script src="js/wordfind.js"></script>
             <script type="text/javascript" src="js/wordfindgame.js"></script>
             <script>
-                var words = ['CONTROLES', 'RESULTADOS', 'REGIONALIZAÇÃO', 'RESUMO', 'HIERARQUIZAÇÃO', 'CONSELHOS','DESCENTRALIZAÇÃO'];
+                var words = ['REGIONALIZAÇÃO', 'HIERARQUIZAÇÃO', 'CONSELHOS', 'CONTROLES', 'DESCENTRALIZAÇÃO', 'LAICOS',];
                 // start a word find game
                 var gamePuzzle = wordfindgame.create(words, '#puzzle', '#words');
                 $('#solve').click(function () {
@@ -62,15 +68,15 @@
                 });
                 // create just a puzzle, without filling in the blanks and print to console
                 var puzzle = wordfind.newPuzzle(words, {
-                    height: 11,
-                    width: 16
+                    height: 8,
+                    width: 010
                 });
                 wordfind.print(puzzle);
             </script>
         </footer>
     </section>
 
-    <div id="janela_1" class="modal-main" style="display: none;">
+    <!-- <div id="janela_1" class="modal-main" style="display: none;">
         <div class="modal-grid" style="margin: 172px auto;">
             <div class="modal-body-grid">
                 <div class="line-modal"></div>
@@ -203,7 +209,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- <div id="feedFinal" class="modal-main">
 

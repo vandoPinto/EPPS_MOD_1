@@ -21,7 +21,7 @@ p {
 #puzzle {
     background-color: transparent;
     float: left;
-    margin: 30px 20px;
+    margin: 30px -12px;
 }
 
 #puzzle div {

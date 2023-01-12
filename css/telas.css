@@ -300,7 +300,7 @@ h1 {
     color: var(--color-blue6);
     font-size: 18px;
     font-weight: 900;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 h2 {
@@ -1305,7 +1305,8 @@ li {
 
 .box-click {
     width: 460px;
-    background: linear-gradient( 180deg, var(--color-orange2), var(--color-orange3));
+    /* background: linear-gradient( 180deg, var(--color-orange2), var(--color-orange3)); */
+    background: transparent linear-gradient(90deg, #F9C395 0%, #FDB26C 62%, #FFAB5A 99%, #FFAB5A 100%) 0% 0% no-repeat padding-box;
     margin: 0 auto;
     padding: 20px;
 }
