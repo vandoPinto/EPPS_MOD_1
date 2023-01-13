@@ -1,32 +1,78 @@
 <div class="largura-1_1">
     <img style="width:100%;  right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
 </div>
-<div class=" coluna-direita largura-1_2 altura-1_1" style="width: 100%;">
-    <div style="margin: 123px -22px;width: 90%;">
-        <p>Como mencionamos, há pessoas que somam, aos marcadores raciais, outras características que socialmente
-            geram
-            processos de discriminação, por exemplo, questões de classe social e orientação sexual. </p>
-        <p>Assim, um olhar
-            cuidadoso deve ser destinado a todas as pessoas usuárias do SUS que vivenciam intersecções de
-            determinantes
-            sociais que podem constituir barreiras de acesso ou de tratamento respeitoso.</p>
+<div class=" coluna-esquerda largura-1_2">
+    <div style="margin: 123px 0 0 56px;width: 75%;">
+        <p>A Política Nacional de Saúde Integral da População Negra adota como diretrizes uma diversidade de tópicos
+            que representam o quão multifacetada é a promoção da equidade racial em saúde.</p>
+        <p> <b>Clique</b> na imagem e conheça essas diretrizes dessa política.</p>
     </div>
 </div>
-<div class="coluna-esquerda largura-1_2 ">
-    <div class="animate__animated animate__backInLeft">
-        <img src="recursos/imgs/CODEP_EPPS_M1U1_RIM_19.svg" style="width: 274px;margin-top: 7px;margin-left: 35px;">
+<div class="coluna-direita largura-1_2 ">
+    <div id="botao_1" class="animate__animated animate__zoomIn">
+        <img src="recursos/imgs/CODEP_EPPS_M1U1_RIM_18.svg" style="width: 239px;margin-top: 15px;margin-right: 59px;">
     </div>
 </div>
 <footer class="bg-footer" style="padding: 0; height: 40px;">
     <div style="display: flex;justify-content: space-between;">
         <div style="display: flex;margin-left: 13px;">
-            <p style="font-weight: 900;font-size: 11px;">Unidade 1</p>
-            <p style="font-size: 11px;width: 261px;margin-left: 10px;margin-top: 6px;">O SUS como processo histórico em
+            <div
+                style="width: 80px;height: 26px;background:  var(--color-blue1);color: white;display: flex;align-items: center;justify-content: center;margin: auto;">
+                <p style="font-weight: 900;font-size: 11px;">Unidade 1</p>
+            </div>
+            <p style="font-size: 11px;width: 261px;margin-left: 10px;margin-top: 6px;">O SUS como processo histórico
+                em
                 construção: afirmar o direito à saúde com ênfase na equidade</p>
         </div>
         <div style="display: flex;margin-right: 14px;">
-            <p style="font-weight: 900;font-size: 11px;">Módulo 1</p>
+            <div
+                style="width: 80px;height: 26px;background:  var(--color-blue1);color: white;display: flex;align-items: center;justify-content: center;margin: auto;">
+                <p style="font-weight: 900;font-size: 11px;">Módulo 1</p>
+            </div>
             <p style="font-size: 11px;margin-left: 10px;">(Re)conhecendo o Sistema Único de Saúde</p>
         </div>
     </div>
+    <div id="janela_1"
+        style="width: 826px;height: 336px;background: 0% 0% no-repeat padding-box padding-box rgb(16, 93, 166);border-radius: 10px;position: absolute;top: -365px;left: 30px;display: flex;align-items: center;justify-content: center;cursor: pointer;">
+        <p style="color: #FFFFFF;margin: 34px;font: normal normal normal 14px/18px Open Sans;">I –
+            inclusão dos temas Racismo e Saúde da População Negra nos processos de formação e educação permanente dos
+            trabalhadores da saúde e no exercício do controle social na saúde;<br><br>
+            II – ampliação e fortalecimento da participação do Movimento Social Negro nas instâncias de controle social
+            das políticas de saúde, em consonância com os princípios da gestão participativa do SUS, adotados no Pacto
+            pela Saúde;<br><br>
+            III – incentivo à produção do conhecimento científico e tecnológico em saúde da população negra;<br><br>
+            IV – promoção do reconhecimento dos saberes e das práticas populares de saúde, incluindo aqueles preservados
+            pelas religiões de matrizes africanas;<br><br>
+            V – implementação do processo de monitoramento e avaliação das ações pertinentes ao combate ao racismo e à
+            redução das desigualdades étnico-raciais no campo da saúde nas distintas esferas de governo;<br><br>
+            VI – desenvolvimento de processos de informação, comunicação e educação, que desconstruam estigmas e
+            preconceitos, fortaleçam uma identidade negra positiva e contribuam para a redução das vulnerabilidades.
+            &nbsp;
+        </p>
+    </div>
 </footer>
+<script>
+    $(() => {
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
+        apagarJanelas();
+        $(document).find('[id^=btn]').hide();
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).css('cursor', 'pointer');
+            $(botao).hover(() => {
+                $(document).find(`[id=btn_${index + 1}_2]`).show();
+            });
+            $(botao).mouseleave(() => {
+                $(document).find('[id^=btn]').hide();
+            });
+            $(botao).click(() => {
+                apagarJanelas();
+                $(janelas[index]).fadeIn();
+            })
+        })
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
+    })
+</script>

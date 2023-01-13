@@ -5,20 +5,42 @@
     <div style="margin: 33px auto;width: 80%;">
         <p>Observe os fatos importantes que marcaram a história do SUS, <b>clicando</b> neste ícone.</p>
     </div>
-    <div>
-        <img src="recursos/icones/RM_M1A1_Icones09.svg" style="width: 132px;margin-top: 97px;margin-left: 380px;">
+    <div data-toggle="modal" data-target="#modalCentro" style="cursor: pointer;">
+        <img src="recursos/icones/RM_M1A1_Icones09.svg" style="width: 170px;margin-top: 60px;margin-left: 350px;">
     </div>
 </div>
 <footer class="bg-footer" style="padding: 0; height: 40px;">
     <div style="display: flex;justify-content: space-between;">
         <div style="display: flex;margin-left: 13px;">
-            <p style="font-weight: 900;font-size: 11px;">Unidade 1</p>
-            <p style="font-size: 11px;width: 261px;margin-left: 10px;margin-top: 6px;">O SUS como processo histórico em
+            <div
+                style="width: 80px;height: 26px;background:  var(--color-blue1);color: white;display: flex;align-items: center;justify-content: center;margin: auto;">
+                <p style="font-weight: 900;font-size: 11px;">Unidade 1</p>
+            </div>
+            <p style="font-size: 11px;width: 261px;margin-left: 10px;margin-top: 6px;">O SUS como processo histórico
+                em
                 construção: afirmar o direito à saúde com ênfase na equidade</p>
         </div>
         <div style="display: flex;margin-right: 14px;">
-            <p style="font-weight: 900;font-size: 11px;">Módulo 1</p>
+            <div
+                style="width: 80px;height: 26px;background:  var(--color-blue1);color: white;display: flex;align-items: center;justify-content: center;margin: auto;">
+                <p style="font-weight: 900;font-size: 11px;">Módulo 1</p>
+            </div>
             <p style="font-size: 11px;margin-left: 10px;">(Re)conhecendo o Sistema Único de Saúde</p>
         </div>
     </div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="modalCentro" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado"
+    aria-hidden="true" style="overflow-y:hidden;">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+        <div class="modal-content" style="position: fixed; top: 72px; left: 0; width: 100%; height: 370px;">
+            <div data-dismiss="modal" class="close" aria-hidden="true" style="margin-left: auto; padding-right: 10px;">
+                ×</div>
+            <video id="full-video" width="100%" height="345px" controls="">
+                <source src="recursos/video/CODEP_CEPPS_RV_01.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+<!-- Fim modal -->

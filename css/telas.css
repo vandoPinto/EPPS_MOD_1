@@ -364,7 +364,7 @@ a:hover {
 .saiba-mais-modal {
     height: 184px;
     width: 470px;
-    background-color: #FAC900;
+    background-color: var(--color-orange);
     margin: 164px auto;
     padding-left: 30px;
     padding-right: 30px;
@@ -385,7 +385,7 @@ a:hover {
 .saiba-mais-modal .close {
     width: 20px;
     height: 20px;
-    background-color: #FAC900;
+    background-color: var(--color-orange);;
     position: absolute;
     right: 0px;
     top: -24px;
@@ -1110,7 +1110,7 @@ audio {
 
 .modal-sim {
     width: 560px;
-    background: linear-gradient( 180deg, var(--color-orange2), var(--color-orange3));
+    background: linear-gradient(180deg, var(--color-orange2), var(--color-orange3));
     margin: 142px auto;
     padding: 20px;
 }
@@ -1153,7 +1153,7 @@ audio {
 
 .modal-conselho {
     width: 502px;
-    background: linear-gradient( 180deg, var(--color-orange2), var(--color-orange3));
+    background: linear-gradient(180deg, var(--color-orange2), var(--color-orange3));
     margin: 0px auto;
     margin-bottom: 5px;
     padding: 10px 15px;
@@ -1203,7 +1203,7 @@ audio {
 
 .modal-1 {
     width: 390px;
-    background: linear-gradient( 180deg, var(--color-orange2), var(--color-orange3));
+    background: linear-gradient(180deg, var(--color-orange2), var(--color-orange3));
     margin-top: 39%;
     margin-left: 5%;
     padding: 10px 15px;
@@ -1211,7 +1211,7 @@ audio {
 
 .modal-2 {
     width: 390px;
-    background: linear-gradient( 180deg, var(--color-orange2), var(--color-orange3));
+    background: linear-gradient(180deg, var(--color-orange2), var(--color-orange3));
     margin-top: 61%;
     margin-left: 5%;
     padding: 10px 15px;
@@ -1219,7 +1219,7 @@ audio {
 
 .modal-3 {
     width: 390px;
-    background: linear-gradient( 180deg, var(--color-orange2), var(--color-orange3));
+    background: linear-gradient(180deg, var(--color-orange2), var(--color-orange3));
     margin-top: 84%;
     margin-left: 5%;
     padding: 10px 15px;
@@ -1227,7 +1227,7 @@ audio {
 
 .modal-4 {
     width: 390px;
-    background: linear-gradient( 180deg, var(--color-orange2), var(--color-orange3));
+    background: linear-gradient(180deg, var(--color-orange2), var(--color-orange3));
     margin-top: 39%;
     margin-left: 130%;
     padding: 10px 15px;
@@ -1235,7 +1235,7 @@ audio {
 
 .modal-5 {
     width: 390px;
-    background: linear-gradient( 180deg, var(--color-orange2), var(--color-orange3));
+    background: linear-gradient(180deg, var(--color-orange2), var(--color-orange3));
     margin-top: 111%;
     margin-left: 5%;
     padding: 10px 15px;
@@ -1243,7 +1243,7 @@ audio {
 
 .modal-6 {
     width: 390px;
-    background: linear-gradient( 180deg, var(--color-orange2), var(--color-orange3));
+    background: linear-gradient(180deg, var(--color-orange2), var(--color-orange3));
     margin-top: 98%;
     margin-left: 130%;
     padding: 10px 15px;
@@ -1251,7 +1251,7 @@ audio {
 
 .modal-7 {
     width: 390px;
-    background: linear-gradient( 180deg, var(--color-orange2), var(--color-orange3));
+    background: linear-gradient(180deg, var(--color-orange2), var(--color-orange3));
     margin-top: 72%;
     margin-left: 130%;
     padding: 10px 15px;
@@ -1289,7 +1289,7 @@ audio {
 
 .modal-tip {
     width: 445px;
-    background: linear-gradient( 180deg, var(--color-orange2), var(--color-orange3));
+    background: linear-gradient(180deg, var(--color-orange2), var(--color-orange3));
     margin: 0 auto;
     padding: 10px 15px;
 }
@@ -1417,7 +1417,7 @@ div:hover.tooltip span {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    background: linear-gradient( to right, var(--color-blue3), var(--color-blue1));
+    background: linear-gradient(to right, var(--color-blue3), var(--color-blue1));
     width: 150px;
     height: 76px;
     border-radius: 10px;
@@ -1449,7 +1449,7 @@ div:hover.tooltip span {
 
 .modal-grid {
     width: 560px;
-    background: linear-gradient( 180deg, var(--color-orange2), var(--color-orange3));
+    background: linear-gradient(180deg, var(--color-orange2), var(--color-orange3));
     padding: 20px;
 }
 

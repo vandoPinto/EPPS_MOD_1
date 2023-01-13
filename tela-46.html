@@ -1,82 +1,176 @@
+<style>
+    li {
+        margin-bottom: 12px;
+        margin-left: 18px;
+    }
+
+    .questao:hover {
+        background-color: #FAC900;
+        cursor: pointer;
+    }
+
+    .marcado {
+        background-color: #FAC900;
+    }
+
+    .opWrong {
+        opacity: 0.5;
+    }
+
+    .submeter {
+        margin: 1em auto;
+        font-weight: bold;
+        color: #ffffff;
+        border-radius: 3px;
+        background-color: var(--color-orange);
+        border: solid 0 transparent;
+        outline: none;
+        box-shadow: 0 .1em rgba(0, 0, 0, .5);
+        padding: .5em;
+        display: block;
+        width: 50%;
+        cursor: pointer;
+        text-align: center;
+    }
+</style>
 <div class="largura-1_1">
     <img style="width:100%; right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
 </div>
-<div class="coluna-esquerda largura-1_1 ">
-    <div style="margin: 10px 0 0 30px;width: 92%;">
-        <h1>Referências</h1>
-
-        <p>
-            ARCAYA, M. C.; ARCAYA, A. L.; SUBRAMANIAN, S. V. Inequalities in health: definitions, concepts, and
-            theories.
-            <b>Global Health Action</b>, [<i>S.l.</i>], v. 8, p. 27106-, 2015. Disponível em:
-            <a href="https://iris.paho.org/bitstream/handle/10665.2/18374/v38n4a1-por.pdf?sequence=5&amp;isAllowed=y#:~:text=O%20termo%20desigualdade%20em%20sa%C3%BAde,denominado%20de%20desigualdade%20em%20sa%C3%BAde"
-                target="_blank"
-                style="color: #0E73F2;">https://iris.paho.org/bitstream/handle/10665.2/18374/v38n4a1-por.pdf?sequence=5&amp;isAllowed=y#:~:text=O%20termo%20desigualdade%20em%20sa%C3%BAde,denominado%20de%20desigualdade%20<br>em%20sa%C3%BAde</a>.
-            Acesso em: 23 set. 2022.
-        </p>
-
-        <p>
-            BARATA, R. B. <b>Como e por que as desigualdades sociais fazem mal à saúde</b>. Rio de
-            Janeiro: Editora FIOCRUZ, 2009. Disponível em:
-            <a href="https://static.scielo.org/scielobooks/48z26/pdf/barata-9788575413913.pdf" target="_blank"
-                style="color: #0E73F2;">https://static.scielo.org/scielobooks/48z26/pdf/barata-9788575413913.pdf</a>.
-            Acesso em: 23 set. 2022.
-        </p>
-
-        <p>
-            BRASIL.
-            Fundação Oswaldo Cruz. Comissão Nacional de Determinantes Sociais em Saúde (CNDSS). As causas sociais
-            das
-            iniquidades em saúde no Brasil: Relatório Final da Comissão Nacional sobre Determinantes Sociais da
-            Saúde.
-            Brasília: CNDSS, 2008. Disponível em: <a
-                href="https://bvsms.saude.gov.br/bvs/publicacoes/causas_sociais_iniquidades.pdf" target="_blank"
-                style="color: #0E73F2;">https://bvsms.saude.gov.br/bvs/publicacoes/causas_sociais_iniquidades.pdf</a>.
-            Acesso em: 23 set. 2022.
-        </p>
-
-        <p>
-            BRASIL. Ministério da Educação e Saúde. <b>
-                1ª Conferência Nacional de Educação e 1ª
-                Conferência Nacional de Saúde
-            </b>. Brasília: Ministério da Educação e Saúde, 1941. Disponível em:
-            <a href="http://www.conselho.saude.gov.br/biblioteca/Relatorios/relatorio_1.pdf" target="_blank"
-                style="color: #0E73F2;">http://www.conselho.saude.gov.br/biblioteca/Relatorios/relatorio_1.pdf</a>.
-            Acesso em: 23 set. 2022.
-        </p>
-
-        <p>
-            BRASIL.
-            Ministério da Saúde. Relatório da 8ª Conferência Nacional de Saúde. Brasília: Ministério da Saúde, 1986.
-            Disponível em: <a href="http://conselho.saude.gov.br/images/relatorio_8.pdf" target="_blank"
-                style="color: #0E73F2;">http://conselho.saude.gov.br/images/relatorio_8.pdf</a>. Acesso em: 23 set.
-            2022.
-        </p>
-
-        <p>
-            BRASIL. Ministério
-            da Saúde. Secretaria de Ciência, Tecnologia, Inovação e Insumos Estratégicos em Saúde. Departamento de
-            Ciência e
-            Tecnologia. Diretriz metodológica: síntese de evidências para políticas [recurso eletrônico]. Brasília:
-            Ministério da Saúde, 2020. Disponível em:
-            <a href="https://bvsms.saude.gov.br/bvs/publicacoes/diretriz_sintese_evidencias_politicas.pdf"
-                target="_blank"
-                style="color: #0E73F2;">https://bvsms.saude.gov.br/bvs/publicacoes/diretriz_sintese_evidencias_politicas.pdf</a>.
-            Acesso em 18 set. 2022.
-        </p>
-
+<div class="coluna-direita largura-1_1">
+    <div style="width: 81%;margin: 25px auto;">
+        <h1>Questão 3</h1>
+        <p>As condições de saúde da população estão diretamente ligadas ao cenário social do país. Qual fator abaixo
+            contribui para a crescente desigualdade social no Brasil?</p>
+        <p class="questao" id="opc_e">a) Ações de promoção da segurança alimentar. </p>
+        <p class="questao" id="opc_e"> b) Aumento dos índices de empregabilidade. </p>
+        <p class="questao" id="opc_c">c) Congelamento de gastos para a educação e a saúde. </p>
+        <p class="questao" id="opc_e">d) Diminuição da evasão escolar entre jovens.</p>
+        <div class="submeter" style="width: 20%; margin-top: 130px; display: none;">Submeter</div>
+        <div style="position: absolute; width: 500px; left: 21%; top: 28%; height: 150px; display: none;"
+            id="feedCerto">
+            <div class="objetivo animate__animated animate__pulse">
+                <div>
+                    <img class="icone-image" style="width: 11%; margin-right: -6%; margin-top: -24px;"
+                        src="recursos/icones/RM_M1A1_Icones10.svg">
+                    <div class="box-click" style="width:468px; margin: 0;">
+                        <div class="line-box">
+                            <div style="margin-left: 20px;">
+                                <h1>Resposta correta</h1>
+                                <p style="margin-top: 15px;">
+                                    Parabéns! O congelamento de gastos para a educação e a saúde contribuem para a
+                                    crescente desigualdade social no Brasil, fazendo com que os projetos em prol da
+                                    população não sejam executados.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-fechar">
+                            <button class="btn-fechar" onclick="closeModalSim('dv-modal-sim')">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="position: absolute; width: 500px; left: 21%; top: 27%; height: 150px; display: none;"
+            id="feedErrado">
+            <div class="objetivo animate__animated animate__pulse">
+                <div>
+                    <img class="icone-image" style="width: 11%; margin-right: -6%; margin-top: -24px;"
+                        src="recursos/icones/RM_M1A1_Icones10.svg">
+                    <div class="box-click" style="width:468px; margin: 0;">
+                        <div class="line-box">
+                            <div style="margin-left: 20px;">
+                                <h1>Resposta incorreta</h1>
+                                <p style="margin-top: 15px;">
+                                    Na verdade, a afirmativa correta é a letra “c”. O congelamento de gastos para a
+                                    educação e a saúde contribuem para a crescente desigualdade social no Brasil,
+                                    fazendo com que os projetos em prol da população não sejam executados.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-fechar">
+                            <button class="btn-fechar" onclick="closeModalSim('dv-modal-sim')">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <footer class="bg-footer" style="padding: 0; height: 40px;">
     <div style="display: flex;justify-content: space-between;">
         <div style="display: flex;margin-left: 13px;">
-            <p style="font-weight: 900;font-size: 11px;">Unidade 1</p>
-            <p style="font-size: 11px;width: 261px;margin-left: 10px;margin-top: 6px;">O SUS como processo histórico em
+            <div
+                style="width: 80px;height: 26px;background:  var(--color-blue1);color: white;display: flex;align-items: center;justify-content: center;margin: auto;">
+                <p style="font-weight: 900;font-size: 11px;">Unidade 1</p>
+            </div>
+            <p style="font-size: 11px;width: 261px;margin-left: 10px;margin-top: 6px;">O SUS como processo histórico
+                em
                 construção: afirmar o direito à saúde com ênfase na equidade</p>
         </div>
         <div style="display: flex;margin-right: 14px;">
-            <p style="font-weight: 900;font-size: 11px;">Módulo 1</p>
+            <div
+                style="width: 80px;height: 26px;background:  var(--color-blue1);color: white;display: flex;align-items: center;justify-content: center;margin: auto;">
+                <p style="font-weight: 900;font-size: 11px;">Módulo 1</p>
+            </div>
             <p style="font-size: 11px;margin-left: 10px;">(Re)conhecendo o Sistema Único de Saúde</p>
         </div>
     </div>
 </footer>
+<script>
+    $(() => {
+        let resposta = '';
+        let mostrarSub = true;
+        let feedCerto = $(document).find('[id^=feedCerto]').hide();
+        let feedErrado = $(document).find('[id^=feedErrado]').hide();
+        let submeter = $(document).find('[class=submeter]').hide();
+
+        $(feedCerto).on('click', apagarFeeds);
+        $(feedErrado).on('click', apagarFeeds);
+
+        function apagarFeeds() {
+            feedCerto.fadeOut();
+            feedErrado.fadeOut();
+        }
+
+        function desmarcarTudo() {
+            let questao = $(document).find('[id^=opc]').map((index, sel) => {
+                $(sel).removeClass("marcado");
+            })
+        }
+
+        let questao = $(document).find('[id^=opc]').map((index, sel) => {
+            $(sel).click(() => {
+                console.log(sel.id);
+                resposta = sel.id;
+                if (mostrarSub) {
+                    submeter.fadeIn();
+                }
+
+                desmarcarTudo();
+                $(sel).addClass("marcado");
+            })
+        })
+
+
+        $(submeter).on('click', () => {
+            console.log("clicou " + resposta.split("_")[1]);
+            if (resposta.split("_")[1] == "c") {
+                $(feedCerto).fadeIn();
+                pontos += 1;
+                mostrarSub = false;
+                submeter.hide();
+
+                // opacidade das questões erradas e marcação da questão certa
+
+                let questao = $(document).find('[id^=opc]').map((index, sel) => {
+                    $(sel).removeClass("questao").css("pointer-events", "none");
+
+                    let opacityWrong = $(document).find('[id^=opc_e]').addClass('opWrong');
+
+                })
+            } else {
+                $(feedErrado).fadeIn();
+            }
+        })
+    })
+</script>

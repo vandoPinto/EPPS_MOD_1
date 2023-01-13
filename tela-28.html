@@ -1,26 +1,262 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen"> -->
+<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
+<!-- <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen"> -->
+<!-- <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen"> -->
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<style>
+    .objetivo-box {
+        width: 65%;
+        background-color: transparent;
+        border-top: var(--color-blue) solid 30px;
+        margin: 100px auto;
+    }
+
+    .objetivo-inside {
+        margin: 33px 0 0 7px;
+        padding-right: 8px;
+        width: 385px;
+        background-color: white;
+    }
+
+    #puzzle .puzzleSquare {
+        height: 18px;
+        width: 37px;
+    }
+</style>
 <div class="largura-1_1">
     <img style="width:100%; right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
 </div>
 <div class="coluna-esquerda largura-1_1 ">
-    <div style="margin: 33px auto;width: 85%;">
-        <p>Se considerarmos o SUS uma ferramenta de promoção de justiça social, orientada pelo princípio da
-            equidade, verificaremos, analisando a figura, que ainda temos muitos desafios pela frente para enfrentar
-            o racismo na gestão, na participação e na atenção à saúde.</p>
-        <div>
-            <img src="recursos/imgs/CODEP_EPPS_M1U1_RIM_12.svg" style="width: 764px;margin-top: 37px;">
+    <div style="margin: 30px auto; width: 85%; ">
+        <p>
+            Vamos verificar se você recorda os princípios e as diretrizes que são costumeiramente mais ressaltados como
+            pilares do SUS? No caça-palavras, procure seis palavras-chave que o(a) ajudarão na recapitulação do estudo.
+        </p>
+    </div>
+    <section class="main-content" style="margin-top: -40px; margin-left: 30px;">
+        <div id='puzzle'></div>
+        <div style="position: absolute;right: 7px;">
+            <div id="words">
+                <ul>
+                    <li class="word REGIONALIZAÇÃO">REGIONALIZAÇÃO</li>
+                    <li class="word HIERARQUIZAÇÃO">HIERARQUIZAÇÃO</li>
+                    <li class="word CONSELHOS">CONSELHOS</li>
+                    <li class="word CONTROLES">CONTROLES</li>
+                    <li class="word DESCENTRALIZAÇÃO">DESCENTRALIZAÇÃO</li>
+                    <li class="word INTEGRALIDADE">INTEGRALIDADE</li>
+                </ul>
+            </div>
+            <div class="words-header">
+                <p>Encontre as seguintes palavras:</p>
+            </div>
+            <div><button id="solve">Resolver o Puzzle</button></div>
+        </div>
+
+        <footer class="site-footer">
+            <script language="javascript" type="text/javascript"
+                src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+            <script src="js/wordfind.js"></script>
+            <script type="text/javascript" src="js/wordfindgame.js"></script>
+            <script>
+                var words = ['REGIONALIZAÇÃO', 'HIERARQUIZAÇÃO', 'CONSELHOS', 'CONTROLES', 'DESCENTRALIZAÇÃO', 'INTEGRALIDADE',];
+                // start a word find game
+                var gamePuzzle = wordfindgame.create(words, '#puzzle', '#words');
+                $('#solve').click(function () {
+                    wordfindgame.solve(gamePuzzle, words);
+                });
+                // create just a puzzle, without filling in the blanks and print to console
+                var puzzle = wordfind.newPuzzle(words, {
+                    height: 8,
+                    width: 010
+                });
+                wordfind.print(puzzle);
+            </script>
+        </footer>
+    </section>
+
+    <div id="janela_1" class="modal-main" style="display: none;">
+        <div class="modal-grid" style="margin: 172px auto;">
+            <div class="modal-body-grid">
+                <div class="line-modal"></div>
+                <div>
+                    <p>A <b>regionalização</b> é a organização do sistema de saúde, reconhecendo a territorialização.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
+    <div id="janela_2" class="modal-main" style="display: none;">
+        <div class="modal-grid" style="margin: 172px auto;">
+            <div class="modal-body-grid">
+                <div class="line-modal"></div>
+                <div>
+                    <p>A <b>hierarquização</b> atenção aos diferentes níveis de complexidade das necessidades e dos
+                        serviços de saúde.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="janela_3" class="modal-main" style="display: none;">
+        <div class="modal-grid" style="margin: 172px auto;">
+            <div class="modal-body-grid">
+                <div class="line-modal"></div>
+                <div>
+                    <p>
+                        <b>Conselhos</b> e conferências constituem formas de participação cidadã.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="janela_3" class="modal-main" style="display: none;">
+        <div class="modal-grid" style="margin: 172px auto;">
+            <div class="modal-body-grid">
+                <div class="line-modal"></div>
+                <div>
+                    <p>
+                        <b>Conselhos</b> e conferências constituem formas de participação cidadã.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div id="janela_4" class="modal-main" style="display: none;">
+        <div class="modal-grid" style="margin: 135px auto;">
+            <div class="modal-body-grid">
+                <div class="line-modal"></div>
+                <div>
+                    <p>
+                        O <b>controle</b> social é a participação da comunidade na manutenção e construção do SUS.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="janela_5" class="modal-main" style="display: none;">
+        <div class="modal-grid" style="margin: 158px auto;">
+            <div class="modal-body-grid">
+                <div class="line-modal"></div>
+                <div>
+                    <p>
+                        A <b>descentralização</b> é a distribuição de responsabilidades entre as esferas federal,
+                        estadual e municipal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="janela_6" class="modal-main" style="display: none;">
+        <div class="modal-grid" style="margin: 165px auto;">
+            <div class="modal-body-grid">
+                <div class="line-modal"></div>
+                <div>
+                    <p>
+                        A <B>integralidade</B> da saúde envolve um conjunto de ações e serviços preventivos e curativos,
+                        individuais e coletivos em todos os níveis do sistema.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="feedFinal" class="modal-main">
+
+        <div class="objetivo-box" style="width: 50%;position: relative; margin: 148px auto;">
+            <img class="icone-image" style="width: 60px; position: absolute; top: -49px; right: 15px;z-index: 1;" src="recursos/icones/RIC_18.svg">
+            <h3><i>Feedback</i></h3>
+            <div class="objetivo-inside">
+                <div style="width: 100%;">
+                    <p> <b>Muito bem</b>, você conseguiu encontrar todas as ferramentas que auxiliam a equipe na avaliação dos casos que se apresentam todos os dias na UBS.
+                    </p>
+                </div>
+                <div class="square" style="right: -11px; bottom: -12px;"></div>
+            </div>
+        </div>
+    </div> -->
 </div>
 <footer class="bg-footer" style="padding: 0; height: 40px;">
     <div style="display: flex;justify-content: space-between;">
         <div style="display: flex;margin-left: 13px;">
-            <p style="font-weight: 900;font-size: 11px;">Unidade 1</p>
-            <p style="font-size: 11px;width: 261px;margin-left: 10px;margin-top: 6px;">O SUS como processo histórico em
+            <div
+                style="width: 80px;height: 26px;background:  var(--color-blue1);color: white;display: flex;align-items: center;justify-content: center;margin: auto;">
+                <p style="font-weight: 900;font-size: 11px;">Unidade 1</p>
+            </div>
+            <p style="font-size: 11px;width: 261px;margin-left: 10px;margin-top: 6px;">O SUS como processo histórico
+                em
                 construção: afirmar o direito à saúde com ênfase na equidade</p>
         </div>
         <div style="display: flex;margin-right: 14px;">
-            <p style="font-weight: 900;font-size: 11px;">Módulo 1</p>
+            <div
+                style="width: 80px;height: 26px;background:  var(--color-blue1);color: white;display: flex;align-items: center;justify-content: center;margin: auto;">
+                <p style="font-weight: 900;font-size: 11px;">Módulo 1</p>
+            </div>
             <p style="font-size: 11px;margin-left: 10px;">(Re)conhecendo o Sistema Único de Saúde</p>
         </div>
     </div>
 </footer>
+
+<script>
+    let arrDeRespostas = [];
+    let janelas = $(document).find('[id^=janela_]').hide();
+    $(document).find('[id^=feedFinal]').hide();
+
+    janelas.map((i, e) => {
+        arrDeRespostas[i] = false;
+    })
+
+    $(document).on('wordFound', (e) => {
+        // console.log(e.originalEvent.detail.word);
+        words.map((element, i) => {
+            if (element == e.originalEvent.detail.word) {
+                //  $(document).find(`[id^=janela_${i + 1}]`).fadeIn().on('click', fecharTodasAsJanelas);
+                $(document).find(`[id^=janela_${i + 1}]`).addClass('shown').on('click', fecharTodasAsJanelas);
+                console.log(Number(i));
+                arrDeRespostas[Number(i)] = true;
+                console.log(arrDeRespostas);
+            }
+        })
+    })
+
+    $('.REGIONALIZAÇÃO').on('click', function () {
+        if ($(this).hasClass('wordFound')) {
+            $(document).find('#janela_1').addClass('shown').on('click', fecharTodasAsJanelas);
+        }
+    });
+
+    $('.HIERARQUIZAÇÃO').on('click', function () {
+        if ($(this).hasClass('wordFound')) {
+            $(document).find('#janela_2').addClass('shown').on('click', fecharTodasAsJanelas);
+        }
+    });
+
+    $('.CONSELHOS').on('click', function () {
+        if ($(this).hasClass('wordFound')) {
+            $(document).find('#janela_3').addClass('shown').on('click', fecharTodasAsJanelas);
+        }
+    });
+
+    $('.CONTROLES').on('click', function () {
+        if ($(this).hasClass('wordFound')) {
+            $(document).find('#janela_4').addClass('shown').on('click', fecharTodasAsJanelas);
+        }
+    });
+
+    $('.DESCENTRALIZAÇÃO').on('click', function () {
+        if ($(this).hasClass('wordFound')) {
+            $(document).find('#janela_5').addClass('shown').on('click', fecharTodasAsJanelas);
+        }
+    });
+    $('.INTEGRALIDADE').on('click', function () {
+        if ($(this).hasClass('wordFound')) {
+            $(document).find('#janela_6').addClass('shown').on('click', fecharTodasAsJanelas);
+        }
+    });
+
+    function fecharTodasAsJanelas() {
+        $(document).find('[id^=janela]').removeClass('shown');
+        if (arrDeRespostas.every(elem => elem == true)) {
+            // $(document).find('[id^=feedFinal]').addClass('shown');
+        }
+    }
+</script>
