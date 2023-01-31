@@ -1,48 +1,3 @@
-<style>
-    li {
-        margin-bottom: 12px;
-        margin-left: 18px;
-    }
-
-    .questao:hover {
-        background-color: #FAC900;
-        cursor: pointer;
-    }
-
-    .marcado {
-        background-color: #FAC900;
-    }
-
-    .opWrong {
-        opacity: 0.5;
-    }
-
-    .submeter {
-        margin: 1em auto;
-        font-weight: bold;
-        color: #ffffff;
-        border-radius: 3px;
-        background-color: var(--color-orange);
-        border: solid 0 transparent;
-        outline: none;
-        box-shadow: 0 .1em rgba(0, 0, 0, .5);
-        padding: .5em;
-        display: block;
-        width: 50%;
-        cursor: pointer;
-        text-align: center;
-    }
-
-    /* .feed {
-            position: relative;
-            width: 270px;
-            height: 125px;
-            background-color: rgba(255, 214, 64, 1);
-            border-radius: 10px;
-            flex-wrap: nowrap;
-            cursor: pointer;
-        } */
-</style>
 <div class="largura-1_1">
     <img style="width:100%; right: 0px;" src="recursos/imgs/RM_M1A1_Banner01.svg">
     <div style="position: absolute;top: 11px;left: 96px;">
@@ -53,77 +8,78 @@
         </div>
     </div>
 </div>
-<div class="coluna-direita largura-1_1">
-    <div style="width: 90%;margin: 25px auto;">
-        <!-- <iframe src="quiz.html"></iframe> -->
-        <h1>Questão 1</h1>
-        <p>De acordo com o modelo dos determinantes sociais em saúde, de Dahlgren e Whitehead, quais são condições
-            de vida e de trabalho relevantes para a saúde?</p>
-        <p style="margin-left: 20px;">
-            I – A educação, ou seja, o nível educacional que uma pessoa recebeu.
-            <br>
-            II – A habitação, ou seja, as condições de moradia em que a pessoa vive.
-            <br>
-            III – A prole, ou seja, o número de filhos que uma pessoa tem.
-            <br>
-            IV – O desemprego, ou seja, a condição de não ter vínculo de trabalho.
-        </p>
-        <p>Com base nas afirmativas, a sequência correta é:</p>
-        <div style="margin-left: 20px;">
-            <p class="questao" id="opc_c">a) V – V – F – V </p>
-            <p class="questao" id="opc_e">b) F – V – F – V </p>
-            <p class="questao" id="opc_e">c) F – V – V – F </p>
-            <p class="questao" id="opc_e">d) V – V – V – F</p>
+<div class="coluna-esquerda largura-1_1 ">
+    <div style="margin: 31px auto;width: 85%;">
+        <p>Interessou-se pelo tema? Confira alguns materiais selecionados para aprofundamento: </p>
+    </div>
+    <div
+        style="z-index: 100;display: inline-flex;margin-top: 94px;margin-left: 60px;width: 710px;justify-content: space-between;position: absolute;">
+        <div style="cursor: pointer; width: 40px; height: 40px; border-radius: 50%;">
+            <img id="volta" src="recursos/icones/RM_M1A1_Icones20.svg"
+                style="margin-top: 8px;width: 40px;margin-left: 6px;opacity: 0.6;transform: rotate(180deg);">
         </div>
-        <div class="submeter" style="width: 20%; margin-top: -10px; display: none;">Submeter</div>
-        <div style="position: absolute; width: 500px; left: 21%; top: 28%; height: 150px; display: none;"
-            id="feedCerto">
-            <div class="objetivo animate__animated animate__pulse">
-                <div>
-                    <img class="icone-image" style="width: 11%; margin-right: -6%; margin-top: -24px;"
-                        src="recursos/icones/RM_M1A1_Icones10.svg">
-                    <div class="box-click" style="width:468px; margin: 0;">
-                        <div class="line-box">
-                            <div style="margin-left: 20px;">
-                                <h1>Resposta correta</h1>
-                                <p style="margin-top: 15px;">
-                                    Você acertou! Conforme estudamos, habitação, desemprego e educação são fatores
-                                    considerados no modelo de determinantes sociais em saúde de Dahlgren e Whitehead,
-                                    todavia os autores não mencionam prole como uma das condições.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="modal-fechar">
-                            <button class="btn-fechar" onclick="closeModalSim('dv-modal-sim')">Fechar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div style="cursor: pointer; width: 40px; height: 40px; border-radius: 50%;">
+            <img id="avanca" src="recursos/icones/RM_M1A1_Icones20.svg"
+                style="margin-top: 8px;width: 40px;margin-left: 14px;opacity: 1;transform: rotate(360deg);">
         </div>
-        <div style="position: absolute; width: 500px; left: 21%; top: 27%; height: 150px; display: none;"
-            id="feedErrado">
-            <div class="objetivo animate__animated animate__pulse">
-                <div>
-                    <img class="icone-image" style="width: 11%; margin-right: -6%; margin-top: -24px;"
-                        src="recursos/icones/RM_M1A1_Icones10.svg">
-                    <div class="box-click" style="width:468px; margin: 0;">
-                        <div class="line-box">
-                            <div style="margin-left: 20px;">
-                                <h1>Resposta incorreta</h1>
-                                <p style="margin-top: 15px;">
-                                    Na verdade, a afirmativa correta é a letra “a”. Conforme estudamos, habitação,
-                                    desemprego e educação são fatores considerados no modelo de determinantes sociais em
-                                    saúde de Dahlgren e Whitehead, todavia os autores não mencionam prole como uma das
-                                    condições.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="modal-fechar">
-                            <button class="btn-fechar" onclick="closeModalSim('dv-modal-sim')">Fechar</button>
-                        </div>
-                    </div>
-                </div>
+    </div>
+    <div
+        style="width: 623px;height: 172px;margin-top: 60px;background: #FFAB5A 0% 0% no-repeat padding-box;mix-blend-mode: normal;opacity: 0.95;margin-left: 113px;">
+        <div id="janela_1" style="">
+            <div style="display: flex;justify-content: space-between;width: 623px;">
+                <img src="recursos/imgs/RM_M1A1_Elemento01.svg" style="transform: rotate(180deg);width: 120px;">
+                <img src="recursos/imgs/RM_M1A1_Elemento01.svg" style="width: 120px;">
             </div>
+            <p style="width: 400px;margin-top: -17px;margin-left: 111px;">
+                Dicionário PenseSUS (dicionário interativo): neste dicionário, você poderá aprofundar conceitos como os
+                de descentralização, determinantes sociais, direito à saúde, equidade, humanização da saúde,
+                integralidade, reforma sanitária e universalidade.
+                Acesse em: <a href="https://pensesus.fiocruz.br/" target="_blank"
+                    style="color: #0E73F2;">https://pensesus.fiocruz.br/</a></p>
+        </div>
+        <div id="janela_2" style="display: none;">
+            <div style="display: flex;justify-content: space-between;width: 623px;">
+                <img src="recursos/imgs/RM_M1A1_Elemento01.svg" style="transform: rotate(180deg);width: 120px;">
+                <img src="recursos/imgs/RM_M1A1_Elemento01.svg" style="width: 120px;">
+            </div>
+            <p style="width: 490px;margin-top: -45px;margin-left: 78px;">
+                Ceensp - Debate: Promoção da equidade racial e saúde da população negra (vídeo de 136 minutos com janela
+                de LIBRAS): o objetivo do debate é compartilhar o conhecimento sobre a temática da saúde da população
+                negra com a comunidade acadêmica, a partir de elaborações, resultados e análises de estudos recentes,
+                que têm como agenda central o racismo e a saúde em diversas dimensões, aliado à mobilização em prol da
+                Atenção à Saúde da População Negra para o enfrentamento do racismo no setor saúde.
+                Acesse em:
+                <a href="https://www.youtube.com/watch?v=g05FYmUYLzo&amp;ab_channel=EnspFiocruz" target="_blank"
+                    style="color: #0E73F2;">https://www.youtube.com/watch?v=g05FYmUYLzo&amp;ab_channel=EnspFiocruz</a>
+            </p>
+        </div>
+        <div id="janela_3" style="display: none;">
+            <div style="display: flex;justify-content: space-between;width: 623px;">
+                <img src="recursos/imgs/RM_M1A1_Elemento01.svg" style="transform: rotate(180deg);width: 120px;">
+                <img src="recursos/imgs/RM_M1A1_Elemento01.svg" style="width: 120px;">
+            </div>
+            <p style="width: 484px;margin-top: -40px;margin-left: 83px;">
+                Capítulo 6 - Etnicidade e raça e saúde do Guia para Implementação das Prioridades Transversais na
+                Organização Pan-Americana de Saúde/Organização Mundial de Saúde (OPAS/OMS) do Brasil: direitos humanos,
+                equidade, gênero e etnicidade e raça (material técnico): no capítulo, aborda-se sobre como a etnicidade
+                e a raça são fatores que determinam as condições de saúde em uma sociedade e sobre quais são os
+                compromissos da OPAS/OMS para enfrentar essas questões. Acesse em:
+                <a href="https://iris.paho.org/handle/10665.2/49728" target="_blank"
+                    style="color: #0E73F2;">https://iris.paho.org/handle/10665.2/49728</a>
+            </p>
+        </div>
+        <div id="janela_4" style="display: none;">
+            <div style="display: flex;justify-content: space-between;width: 623px;">
+                <img src="recursos/imgs/RM_M1A1_Elemento01.svg" style="transform: rotate(180deg);width: 120px;">
+                <img src="recursos/imgs/RM_M1A1_Elemento01.svg" style="width: 120px;">
+            </div>
+            <p style="width: 400px;margin-top: -27px;margin-left: 111px;">
+                Leia também sobre um balanço dos 30 anos do Sistema Único de Saúde, verificando os avanços e desafios em
+                relação aos princípios e às diretrizes que apresentamos nesta unidade. SUS 30 anos: o início, a
+                caminhada e o rumo, de Nelson Rodrigues dos Santos. Acesse em:
+                <a href="https://www.scielosp.org/article/csc/2018.v23n6/1729-1736/pt/" target="_blank"
+                    style="color: #0E73F2;">https://www.scielosp.org/article/csc/2018.v23n6/1729-1736/pt/</a>
+            </p>
         </div>
     </div>
 </div>
@@ -149,59 +105,61 @@
 </footer>
 <script>
     $(() => {
-        let resposta = '';
-        let mostrarSub = true;
-        let feedCerto = $(document).find('[id^=feedCerto]').hide();
-        let feedErrado = $(document).find('[id^=feedErrado]').hide();
-        let submeter = $(document).find('[class=submeter]').hide();
+        let janelas = $(document).find('[id^=janela]');
+        console.log(janelas);
+        let avanca = $(document).find('[id^=avanca]').on('click', avancar);
+        let volta = $(document).find('[id^=volta]').on('click', voltar);
+        let contador = 1;
+        $(volta).css('opacity', '0.6');
 
-        $(feedCerto).on('click', apagarFeeds);
-        $(feedErrado).on('click', apagarFeeds);
+        apagarJanelas();
+        $(document).find('[id^=janela_1]').show();
 
-        function apagarFeeds() {
-            feedCerto.fadeOut();
-            feedErrado.fadeOut();
-        }
-
-        function desmarcarTudo() {
-            let questao = $(document).find('[id^=opc]').map((index, sel) => {
-                $(sel).removeClass("marcado");
-            })
-        }
-
-        let questao = $(document).find('[id^=opc]').map((index, sel) => {
-            $(sel).click(() => {
-                console.log(sel.id);
-                resposta = sel.id;
-                if (mostrarSub) {
-                    submeter.fadeIn();
-                }
-
-                desmarcarTudo();
-                $(sel).addClass("marcado");
-            })
-        })
-
-
-        $(submeter).on('click', () => {
-            console.log("clicou " + resposta.split("_")[1]);
-            if (resposta.split("_")[1] == "c") {
-                $(feedCerto).fadeIn();
-                pontos += 1;
-                mostrarSub = false;
-                submeter.hide();
-
-                // opacidade das questões erradas e marcação da questão certa
-
-                let questao = $(document).find('[id^=opc]').map((index, sel) => {
-                    $(sel).removeClass("questao").css("pointer-events", "none");
-
-                    let opacityWrong = $(document).find('[id^=opc_e]').addClass('opWrong');
-
-                })
-            } else {
-                $(feedErrado).fadeIn();
+        function avancar() {
+            if (contador < janelas.length) {
+                apagarJanelas();
+                contador++;
+                $(document).find(`[id^=janela_${contador}]`).show();
             }
+            mudarBotoes();
+        }
+
+        function voltar() {
+            if (contador > 1) {
+                apagarJanelas();
+                contador--;
+                $(document).find(`[id^=janela_${contador}]`).show();
+            }
+            mudarBotoes();
+        }
+
+        function mudarBotoes() {
+            if (contador == 1) {
+                $(volta).css('opacity', '0.6');
+                $(avanca).css('opacity', '1');
+            }
+            if (contador == janelas.length) {
+                $(volta).css('opacity', '1');
+                $(avanca).css('opacity', '0.6');
+            }
+            if (contador > 1 && contador < janelas.length) {
+                $(volta).css('opacity', '1');
+                $(avanca).css('opacity', '1');
+            }
+        }
+
+        let botoes = $(document).find('[id^=botao]').map((index, botao) => {
+            $(botao).click(() => {
+                apagarJanelas();
+                mudarBotao(index + 1)
+                $(janelas[index + 1]).show();
+            })
         })
+
+        function apagarJanelas() {
+            janelas.map((index, janela) => {
+                $(janela).hide();
+            })
+        }
     })
 </script>
